@@ -11,24 +11,32 @@ st.set_page_config(
 st.markdown("""
 <style>
 
+/* Réduire l'espace en haut */
+.block-container{
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+
 .main-title{
-    font-size:40px;
+    font-size:36px;
     font-weight:700;
+    margin-bottom:20px;
 }
 
 .section-title{
-    font-size:26px;
+    font-size:24px;
     font-weight:600;
     margin-top:20px;
+    margin-bottom:10px;
 }
 
 .text{
     font-size:20px;
+    line-height:1.6;
 }
 
 .class-box{
     width:200px;
-    margin_right:8px;
     margin-top:8px;
     text-align:center;
     font-size:20px;
@@ -40,7 +48,6 @@ st.markdown("""
 
 </style>
 """, unsafe_allow_html=True)
-
 # ================= TITLE =================
 st.markdown(
     '<div class="main-title">📖 Introduction</div>',
@@ -49,15 +56,15 @@ st.markdown(
 
 # ================= OBJECTIVE =================
 st.markdown(
-    '<div class="section-title">🎯 Objective</div>',
+    '<div class="section-title">🎯 Objectif</div>',
     unsafe_allow_html=True
 )
 
 st.markdown(
     """
     <div class="text">
-    Automatic classification of chest X-ray images using
-    Machine Learning and Deep Learning techniques.
+    Classification automatique des radiographies thoraciques
+    à l'aide de techniques de Machine Learning et de Deep Learning.
     </div>
     """,
     unsafe_allow_html=True
@@ -65,7 +72,7 @@ st.markdown(
 
 # ================= DATASET =================
 st.markdown(
-    '<div class="section-title">📁 Dataset</div>',
+    '<div class="section-title">📁 Base de données</div>',
     unsafe_allow_html=True
 )
 
