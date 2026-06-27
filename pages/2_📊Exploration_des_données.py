@@ -243,12 +243,64 @@ with right_col:
     """, unsafe_allow_html=True)
 
 # ===================================================
-# CONCLUSION
+# EXEMPLES D'IMAGES ATYPIQUES
 # ===================================================
+
+st.markdown("""
+<div class="section-title">
+📸 Exemples d'images atypiques
+</div>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<div class="comment-box">
+Quelques exemples d'images présentant une luminosité
+anormalement élevée ou faible.
+</div>
+""", unsafe_allow_html=True)
+
+
+# ---------- images claires ----------
+st.markdown("""
+<div class="outlier-subtitle">
+Images très claires (mean > 175)
+</div>
+""", unsafe_allow_html=True)
+
+col1, col2, col3 = st.columns([1,5,1])
+
+with col2:
+    st.image(
+        "images/outliers_bright_examples.png",
+        use_container_width=True
+    )
+
+
+# ---------- images sombres ----------
+st.markdown("""
+<div class="outlier-subtitle">
+Images très sombres (mean < 75)
+</div>
+""", unsafe_allow_html=True)
+
+col1, col2, col3 = st.columns([1,5,1])
+
+with col2:
+    st.image(
+        "images/outliers_dark_examples.png",
+        use_container_width=True
+    )
+
+
+# ---------- interprétation ----------
 st.markdown("""
 <div class="conclusion-box">
-💡 Les outliers sont peu nombreux, mais leur identification permet
-de mieux comprendre la variabilité du dataset et leur impact potentiel
-sur l'apprentissage du modèle.
+
+💡 Ces images ne sont pas nécessairement à supprimer.
+Elles peuvent contenir des informations diagnostiques utiles,
+mais présentent un problème d'exposition ou de contraste.<br>
+Une correction de contraste peut donc être préférable
+à une suppression systématique.
+
 </div>
 """, unsafe_allow_html=True)
