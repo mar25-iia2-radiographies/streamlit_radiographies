@@ -10,8 +10,15 @@ st.set_page_config(
 # ================= CSS =================
 st.markdown("""
 <style>
+            section[data-testid="stSidebar"] ul li div {
+    font-size: 18px !important;
+    font-weight: 500;
+}
 
-/* Réduire l'espace en haut */
+section[data-testid="stSidebar"] ul li {
+    margin-bottom: 8px;
+}
+
 .block-container{
     padding-top:2rem;
     padding-bottom:2rem;

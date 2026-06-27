@@ -7,9 +7,9 @@ st.set_page_config(
 )
 
 # ================= CSS =================
+
 st.markdown("""
 <style>
-
 
 section[data-testid="stSidebar"] ul li div {
     font-size: 18px !important;
